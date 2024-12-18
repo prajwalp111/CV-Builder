@@ -59,14 +59,13 @@ CREATE TABLE `experiences` (
 --
 
 CREATE TABLE `resumes` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `full_name` varchar(250) NOT NULL,
   `email_id` varchar(250) NOT NULL,
   `mobile_no` varchar(20) NOT NULL,
   `dob` varchar(20) NOT NULL,
   `gender` varchar(50) NOT NULL,
-  `religion` varchar(50) NOT NULL,
   `nationality` varchar(50) NOT NULL,
   `marital_status` varchar(50) NOT NULL,
   `hobbies` varchar(250) NOT NULL,
@@ -77,8 +76,11 @@ CREATE TABLE `resumes` (
   `updated_at` int(20) NOT NULL,
   `resume_title` varchar(250) NOT NULL,
   `background` varchar(250) NOT NULL DEFAULT '''''',
-  `font` varchar(250) NOT NULL DEFAULT '''Poppins'', sans-serif'
+  `font` varchar(250) NOT NULL DEFAULT '''Poppins'', sans-serif',
+  `profile_image` longblob NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 
 -- --------------------------------------------------------
 

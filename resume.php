@@ -117,6 +117,15 @@ background: radial-gradient(circle, rgba(189, 224, 254, 1) 0%, rgba(173, 216, 23
             padding-bottom: 3px;
             padding-top: 3px;
         }
+
+        tbody .pimage img{
+            width: 120px;
+            height: 120px;
+            background-color:black;
+            border-radius:100%;
+            margin-bottom:20px;
+            margin-left:20px;
+        }
     </style>
 
 <?php
@@ -147,7 +156,15 @@ $actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP
                     <td colspan="2" class="text-center fw-bold fs-4">Resume</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>
+                    <div class="pimage">
+                        <?php if (!empty($resume['profile_image'])): ?>
+                        <img src="data:image/jpeg;base64,<?= base64_encode($resume['profile_image']) ?>" alt="Profile Image">
+                        <?php else: ?>
+                            <p>No image available</p>
+                        <?php endif; ?>
+                    </div>
+                    </td>
                     <td class="personal-info zsection">
                         <div class="fw-bold name"><?=$resume['full_name']?></div>
                         <div>Mobile : <span class="mobile">+91-<?=$resume['mobile_no']?></span></div>

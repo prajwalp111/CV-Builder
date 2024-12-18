@@ -17,19 +17,28 @@ $fn->authPage();
 
             <div>
 
-                <form action="actions/createresume.action.php" method="post" class="row g-3 p-3">
+                <form action="actions/createresume.action.php" method="post" enctype="multipart/form-data" class="row g-3 p-3">
                      <div class="col-md-6">
                         <label class="form-label">Resume Title</label>
                         <input type="text" name="resume_title" placeholder="Web Developer Consultant" value="resume<?=time()?>" class="form-control" required>
                     </div>
                     <h5 class="mt-3 text-secondary"><i class="bi bi-person-badge"></i> Personal Information</h5>
+
+
+                    <div class="col-md-6">
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" name="profile_image" id="profile_image"  required><br><br>
+                    </div>
+
+
+
                     <div class="col-md-6">
                         <label class="form-label">Full Name</label>
-                        <input type="text" name="full_name" placeholder="Dev Ninja" class="form-control" required>
+                        <input type="text" name="full_name" placeholder="Enter your name" class="form-control" required>
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Email</label>
-                        <input type="email" name="email_id" placeholder="dev@abc.com" class="form-control" required>
+                        <input type="email" name="email_id" placeholder="example@abc.com" class="form-control" required>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label"> Objective</label>
@@ -37,7 +46,7 @@ $fn->authPage();
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Mobile No</label>
-                        <input type="number" min="1111111111" name="mobile_no" placeholder="9569569569" max="9999999999"
+                        <input type="number" min="1111111111" name="mobile_no" placeholder="##########" max="9999999999"
                             class="form-control" required>
                     </div>
                     <div class="col-md-6">
@@ -58,19 +67,7 @@ $fn->authPage();
                         </select>
                     </div>
 
-                    <div class="col-md-6">
-                        <label class="form-label">Religion</label>
-                        <select class="form-select" name="religion">
-                            <option>Hindu</option>
-                            <option>Muslim</option>
-                            <option>Sikh</option>
-                            <option>Christian</option>
-
-
-
-                        </select>
-                    </div>
-
+                    
                     <div class="col-md-6">
                         <label class="form-label">Nationality</label>
                         <select class="form-select" name="nationality">

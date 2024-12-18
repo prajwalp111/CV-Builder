@@ -36,7 +36,7 @@ $fn->nonAuthPage();
                 <div class="d-flex justify-content-between my-3">
 
                     <a href="forgot-password.php" class="text-decoration-none">Forgot Password ?</a>
-                    <a href="register.php" class="text-decoration-none">Register</a>
+                    <a href="register.php" class="text-decoration-none">Create Account</a>
 
                 </div>
 
