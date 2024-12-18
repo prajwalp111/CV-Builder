@@ -41,7 +41,14 @@ $skills = $skills->fetch_all(1);
                         <input type="text" name="resume_title" placeholder="Web Developer Consultant" value="<?=@$resume['resume_title']?>" class="form-control" required>
                     </div>   
                 <h5 class="mt-3 text-secondary"><i class="bi bi-person-badge"></i> Personal Information</h5>
-                    <div class="col-md-6">
+                   
+                 <!-- <div class="col-md-6">
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" name="profile_image" id="profile_image"  required><br><br>
+                    </div> -->
+                
+                
+                <div class="col-md-6">
                         <label class="form-label">Full Name</label>
                         <input type="text" value="<?=@$resume['full_name']?>" name="full_name" placeholder="Enter your name" class="form-control" required>
                     </div>

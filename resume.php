@@ -121,8 +121,8 @@ background: radial-gradient(circle, rgba(189, 224, 254, 1) 0%, rgba(173, 216, 23
         tbody .pimage img{
             width: 120px;
             height: 120px;
-            background-color:black;
-            border-radius:100%;
+            /* background-color:black;
+            border-radius:100%; */
             margin-bottom:20px;
             margin-left:20px;
         }

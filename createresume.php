@@ -29,7 +29,7 @@ $fn->authPage();
                     <label for="photo">Upload Photo:</label>
                     <input type="file" name="profile_image" id="profile_image"  required><br><br>
                     </div>
-
+                    <div class="col-md-6"></div>
 
 
                     <div class="col-md-6">
