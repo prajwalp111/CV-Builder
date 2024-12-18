@@ -29,22 +29,22 @@ $result=$db->query("SELECT id,full_name FROM users WHERE (email_id='$email_id')"
 $result = $result->fetch_assoc();
 
 if($result){
-$otp = rand(100000,999999);//otp
+$otp = rand(100000,999999);
 $mail = new PHPMailer(true);
 
 try {
     //Server settings
                     
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'prajwalp1812@gmail.com';                     //SMTP username
-    $mail->Password   = 'qxmrvunhagrhidum';                               //SMTP password
+    $mail->Username   = 'prajwalp1812@gmail.com';               //SMTP username
+    $mail->Password   = 'jrytvopjuylnjvru';                     //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('verify@resumebuilder.com', 'cv builder');
+    $mail->setFrom('verify@resumebuilder.com', 'Resume Builder');
     $mail->addAddress($email_id);     //Add a recipient
 
   

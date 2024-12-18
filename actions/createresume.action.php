@@ -12,7 +12,7 @@ $post=$_POST;
 // print_r($post);
 
 
-if($post['full_name'] && $post['email_id'] && $post['objective'] && $post['mobile_no'] && $post['dob'] && $post['religion'] && $post['nationality'] && $post['marital_status'] && $post['hobbies'] && $post['languages'] && $post['address']){
+if($post['full_name'] && $post['email_id'] && $post['objective'] && $post['mobile_no'] && $post['dob']  && $post['nationality'] && $post['marital_status'] && $post['hobbies'] && $post['languages'] && $post['address']){
 
     $columns='';
     $values='';

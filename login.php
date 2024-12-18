@@ -1,6 +1,6 @@
 
 <?php
-$title = "Login | Resume Builder";
+$title = "Login | CV Builder";
 require './assets/includes/header.php';
 $fn->nonAuthPage();
 ?>

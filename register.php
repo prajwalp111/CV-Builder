@@ -20,7 +20,7 @@ $fn->nonAuthPage();
 
 
                 <div class="form-floating">
-                    <input type="text" class="form-control" name="full_name" id="floatingName" placeholder="" required>
+                    <input type="text" class="form-control" name="full_name" id="floatingName" placeholder="Enter your name" required>
                     <label for="floatingInput"><i class="bi bi-person"></i> Full Name</label>
                 </div>
                 <div class="form-floating">

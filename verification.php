@@ -1,6 +1,6 @@
 
 <?php
-$title = "Verification | Resume Builder";
+$title = "Verification | CV Builder";
 require './assets/includes/header.php';
 $fn->nonAuthPage();
 ?>

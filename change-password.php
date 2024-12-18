@@ -1,7 +1,7 @@
 
 
 <?php
-$title = "Change Password | Resume Builder";
+$title = "Change Password | CV Builder";
 require './assets/includes/header.php';
 $fn->nonAuthPage();
 ?>

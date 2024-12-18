@@ -1,5 +1,5 @@
 <?php
-$title = "Account | Resume Builder";
+$title = "Account | CV Builder";
 require './assets/includes/header.php';
 require './assets/includes/navbar.php';
 $fn->authPage();

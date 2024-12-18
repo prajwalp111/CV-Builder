@@ -1,5 +1,5 @@
 <?php
-$title = "Forgot Password ? | Resume Builder";
+$title = "Forgot Password ? | CV Builder";
 require './assets/includes/header.php';
 $fn->nonAuthPage();
 ?>

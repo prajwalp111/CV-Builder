@@ -1,5 +1,5 @@
 <?php
-$title = "Create Resume | Resume Builder";
+$title = "Create Resume | CV Builder";
 require './assets/includes/header.php';
 require './assets/includes/navbar.php';
 $fn->authPage();

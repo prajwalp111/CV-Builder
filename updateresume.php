@@ -43,11 +43,11 @@ $skills = $skills->fetch_all(1);
                 <h5 class="mt-3 text-secondary"><i class="bi bi-person-badge"></i> Personal Information</h5>
                     <div class="col-md-6">
                         <label class="form-label">Full Name</label>
-                        <input type="text" value="<?=@$resume['full_name']?>" name="full_name" placeholder="enter name" class="form-control" required>
+                        <input type="text" value="<?=@$resume['full_name']?>" name="full_name" placeholder="Enter your name" class="form-control" required>
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Email</label>
-                        <input type="email" value="<?=@$resume['email_id']?>" name="email_id" placeholder="email@abc.com" class="form-control" required>
+                        <input type="email" value="<?=@$resume['email_id']?>" name="email_id" placeholder="example@abc.com" class="form-control" required>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label"> Objective</label>
@@ -76,17 +76,7 @@ $skills = $skills->fetch_all(1);
                         </select>
                     </div>
 
-                    <div class="col-md-6">
-                        <label class="form-label">Religion</label>
-                        <select class="form-select" name="religion">
-                            <option <?=($resume['religion']=='Hindu')?'selected':''?>>Hindu</option>
-                            <option <?=($resume['religion']=='Muslim')?'selected':''?>>Muslim</option>
-                            <option <?=($resume['religion']=='Sikh')?'selected':''?>>Sikh</option>
-                            <option <?=($resume['religion']=='Christian')?'selected':''?>>Christian</option>
-
-
-                        </select>
-                    </div>
+                    
 
                     <div class="col-md-6">
                         <label class="form-label">Nationality</label>

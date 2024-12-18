@@ -29,9 +29,8 @@ require './assets/class/function.class.php';
     <style>
         body {
           
-            background: rgb(249, 249, 249);
-            background: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(240, 232, 127, 1) 49%, rgba(246, 243, 132, 1) 100%);
-
+            background: #bde0fe;
+background: radial-gradient(circle, rgba(189, 224, 254, 1) 0%, rgba(173, 216, 230, 1) 50%, rgba(135, 206, 250, 1) 100%);
         }
 
         .form-signin {

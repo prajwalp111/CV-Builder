@@ -46,9 +46,9 @@ $skills = $skills->fetch_all(1);
             
             font-size: 12pt;
 
-            background: rgb(249, 249, 249);
-            background: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(240, 232, 127, 1) 49%, rgba(246, 243, 132, 1) 100%);
-            background-image: url(./assets/images/tiles/<?=$resume['background']?>);
+            background: #bde0fe;
+background: radial-gradient(circle, rgba(189, 224, 254, 1) 0%, rgba(173, 216, 230, 1) 50%, rgba(135, 206, 250, 1) 100%);
+  background-image: url(./assets/images/tiles/<?=$resume['background']?>);
             background-attachment: fixed;
 
         }
@@ -268,10 +268,7 @@ foreach($skills as $skill){
                                 <td>Gender</td>
                                 <td>: <span class="gender"><?=$resume['gender']?></span></td>
                             </tr>
-                            <tr>
-                                <td>Religion</td>
-                                <td>: <span class="religion"><?=$resume['religion']?></span></td>
-                            </tr>
+                            
                             <tr>
                                 <td>Nationality</td>
                                 <td>: <span class="nationality"><?=$resume['nationality']?></span></td>
